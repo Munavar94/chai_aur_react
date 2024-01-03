@@ -1,4 +1,4 @@
-
+import Chai from "./Chai"
 
 
 function App() {
@@ -15,6 +15,8 @@ function App() {
         npm install
         npm run dev
      </pre>
+
+     <Chai />
     </>
   )
 }
