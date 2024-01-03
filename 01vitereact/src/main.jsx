@@ -1,6 +1,6 @@
-// import React from 'react'
+import React from 'react'
 import ReactDOM from 'react-dom/client'
-// import App from './App.jsx'
+import App from './App.jsx'
 
 
 // const ReactElement = {
@@ -13,25 +13,29 @@ import ReactDOM from 'react-dom/client'
 // };
 
 
-const anotherElement = (
-  <a href='https://google.com' target='_blank' rel="noreferrer">
-    visit Google
-  </a>
-)
-console.log(anotherElement);  // finally it convert to object
+// const anotherElement = (
+//   <a href='https://google.com' target='_blank' rel="noreferrer">
+//     visit Google
+//   </a>
+// )
 
-// $$typeof :  Symbol(react.element)
-// key :  null
-// props :  {href: 'https://google.com', target: '_blank', rel: 'noreferrer', children: 'visit Google'}
-// ref :  null
-// type : "a"
-// _source :  {fileName: 'E:/01 React/chai_aur_react/01vitereact/src/main.jsx', lineNumber: 17, columnNumber: 1}
-// [[Prototype]] :  Object
+const anotherUser = "add on's"
+const reactElement = React.createElement(
+  'a',                        // tag
+  {
+    href: 'https://google.com',
+    target: '_blank',
+  },
+  'click me to visit google ',  // some text
+  anotherUser,
+);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   
     // <App />
 
-    anotherElement
+    // anotherElement
+
+    reactElement
   
 )
