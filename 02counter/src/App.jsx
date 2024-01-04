@@ -5,10 +5,14 @@ function App() {
   const [count, setCount] = useState(0);
 
   const handleAdd = () => {
-    console.log('value added', Math.random())
+    // console.log('value added', Math.random())
     setCount((prev) => (
       prev + 1
-    ))
+    ));   // 1
+
+    setCount(prev => prev + 1); // 2
+    setCount(prev => prev + 1); // 3
+    setCount(prev => prev + 1); // 4
   }
 
   const handleRemove = () => {    
